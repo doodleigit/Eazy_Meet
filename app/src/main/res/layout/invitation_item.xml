@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/white">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userImage"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/default_profile" />
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/userImage"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/fullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            tools:text="Full Name"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/invitationText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="has invited you to his location."
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/acceptLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/accept"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_toLeftOf="@id/reject"
+            android:background="@drawable/rectangle_corner_round_three"
+            android:fontFamily="sans-serif"
+            android:padding="5dp"
+            android:text="@string/accept"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_accept"
+            style="?android:attr/progressBarStyleLargeInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/accept"
+            android:layout_alignTop="@+id/accept"
+            android:layout_alignEnd="@+id/accept"
+            android:layout_alignBottom="@+id/accept"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:indeterminateTint="@android:color/holo_blue_bright"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/reject"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/rectangle_corner_round_four"
+            android:fontFamily="sans-serif"
+            android:padding="5dp"
+            android:text="@string/reject"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar_invite"
+            style="?android:attr/progressBarStyleLargeInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/reject"
+            android:layout_alignTop="@+id/reject"
+            android:layout_alignEnd="@+id/reject"
+            android:layout_alignBottom="@+id/reject"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:indeterminateTint="@android:color/holo_blue_bright"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/viewOnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout"
+        android:layout_marginEnd="10dp"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:drawableEnd="@drawable/ic_arrow_forward_24dp"
+        android:text="@string/view_on_map"
+        android:textSize="14sp"
+        android:textColor="@color/greyWhite"
+        android:visibility="gone"/>
+
+</RelativeLayout>

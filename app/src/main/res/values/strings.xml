@@ -1,0 +1,68 @@
+<resources>
+    <integer-array name="validity_time_int">
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+        <item>40</item>
+        <item>60</item>
+        <item>300</item>
+    </integer-array>
+
+    <string name="app_name">Eazy Meet</string>
+    <string name="next">Next</string>
+    <string name="verify">Verify</string>
+    <string name="done">Done</string>
+    <string name="register_with_your_phone_number">Register with your phone number</string>
+    <string name="on_easymeet_your_phone_number_is_your_account_identifier_that_lets_you_connect_with_your_friends">On EasyMeet, your phone number is your account identifier that lets you connect with your friends. To sign in to your existing account, you\'ll need to enter your phone number and agree to our Terms of Service and Privacy Policy which explain how we use your personal information. if you agree, click Next.</string>
+    <string name="enter_verification_code">Enter verification code</string>
+    <string name="we_just_send_you_a_sms_with_a_code">We just send you a SMS with a code to</string>
+    <string name="by_signing_up_you_confirm_that_you_accept">By signing up you confirm that you accept all Terms of Service</string>
+    <string name="personal_information">Personal information</string>
+    <string name="mobile">Mobile</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="password">Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="log_in">Log In</string>
+    <string name="forgot_password">Forgot password</string>
+    <string name="invite_to_current">Invite to current</string>
+    <string name="request_to_share">Request to share</string>
+    <string name="invite_for_meet">Invite for meet</string>
+    <string name="schedule_and_meet">Schedule &amp; meet</string>
+    <string name="select_country">Select Country</string>
+    <string name="format_country_code">%1$s(%2$s)</string>
+    <string name="field_is_empty">field is empty!</string>
+    <string name="please_enter_a_valid_phone_number">please enter a valid phone number!</string>
+    <string name="please_check_your_network_connection">Please check your network connection and try again.</string>
+    <string name="the_server_not_responding">The server is not responding please try again</string>
+    <string name="there_is_an_issue_with_otp">There is an issue with OTP verification please try again later</string>
+    <string name="there_is_an_issue_occurs">There is an issue occurs while uploading please try again</string>
+    <string name="something_went_wrong">Something went wrong. Please try again</string>
+    <string name="otp_does_not_match">Otp does not match</string>
+    <string name="select_from_gallery">Select from Gallery</string>
+    <string name="capture_by_camera">Capture by Camera</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="contacts">Contacts</string>
+    <string name="invitation_validity_time">Invitation validity time</string>
+    <string name="validity_">Validity :</string>
+    <string name="preview">Preview</string>
+    <string name="waiting">Waiting</string>
+    <string name="accepted">Accepted</string>
+    <string name="rejected">Rejected</string>
+    <string name="accept">Accept</string>
+
+    <string name="reject">Reject</string>
+    <string name="view_on_map">View on Map</string>
+    <string name="invitations">Invitations</string>
+
+    <string-array name="validity_times">
+        <item>5 min</item>
+        <item>10 min</item>
+        <item>20 min</item>
+        <item>40 min</item>
+        <item>1 hour</item>
+        <item>5 hour</item>
+    </string-array>
+
+</resources>

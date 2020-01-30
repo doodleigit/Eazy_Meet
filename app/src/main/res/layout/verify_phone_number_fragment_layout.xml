@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/lightColorPrimary">
+
+    <include android:id="@+id/header" layout="@layout/header"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/enter_verification_code"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:text="@string/we_just_send_you_a_sms_with_a_code"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/greyWhite"/>
+
+        <TextView
+            android:id="@+id/phoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            tools:text="+880 1700 000 000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="@color/greyWhite"/>
+
+        <com.chaos.view.PinView
+            android:id="@+id/firstPinView"
+            style="@style/PinWidget.PinView"
+            android:layout_width="293dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edit_text_gradient_bg"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:cursorVisible="true"
+            android:inputType="text"
+            android:textColor="@color/greyWhite"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:cursorColor="@color/colorAccent"
+            app:cursorWidth="2dp"
+            app:itemCount="4"
+            app:itemHeight="50dp"
+            app:itemRadius="0dp"
+            app:itemSpacing="0dp"
+            app:itemWidth="75dp"
+            app:lineColor="@color/transparent"
+            app:lineWidth="2dp"
+            app:viewType="rectangle">
+
+            <requestFocus />
+        </com.chaos.view.PinView>
+
+        <LinearLayout
+            android:id="@+id/verifyLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="130dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:background="@drawable/rectangle_corner_round_one"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/verify"
+                android:textSize="15sp"
+                android:textColor="@color/greyWhite" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="5dp"
+                android:src="@drawable/ic_arrow_forward_24dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
